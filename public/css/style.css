@@ -241,7 +241,6 @@ footer{
             text-align: end;
             padding-left: 5px;
         }
-    
         .hamburger-buttom{
             display: none;
         }
@@ -252,7 +251,6 @@ footer{
         .main-navbar ul{
             display: flex;
         }
-
         .main-navbar li{
             /* separa cada lista */
             margin: 0 5px;
@@ -260,7 +258,6 @@ footer{
         .main-navbar i {
             margin-left: 5px;
         }
-
         .home-banner{
             display: flex;
         }
@@ -269,22 +266,20 @@ footer{
             justify-content: center;
 
         }
-
         .box-footer{
             width: 350px;
             margin: 0 45px;
         }
-
-
         main{
             margin-top: 148px;
-        }
-
-
-
-
-        
+        }   
     }
+
+@media(min-width:250px){
+    main{
+        margin-top: 150px;
+    }
+}
 
 
 
