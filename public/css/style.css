@@ -111,7 +111,7 @@ display: none;
     display: flex;
     justify-content: center;
     background-color: rgb(210, 210, 210);
-    display: none;
+    /* display: none; */
 }
 .home-banner img{
     width: 100%;
@@ -219,6 +219,22 @@ footer{
     justify-content: center;
 }
 
+/* Main */
+@media(min-width:250px){
+    main{
+        margin-top: 255px;
+    }
+}
+@media(min-width:389px){
+    main{
+        margin-top: 235px;
+    }
+}
+@media(min-width:411px){
+    main{
+        margin-top: 195px;
+    }
+}
 
 @media (min-width:769px) {
     .main-navbar{
@@ -275,11 +291,6 @@ footer{
         }   
     }
 
-@media(min-width:250px){
-    main{
-        margin-top: 180px;
-    }
-}
 
 
 
