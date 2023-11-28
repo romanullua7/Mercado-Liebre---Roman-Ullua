@@ -45,8 +45,8 @@ main{
 
 
 .logo{
-    width: 200px;
-    
+    /* width: 200px; */
+    width: 140px;   
 }
 .box-search-bar {
     margin-right: 20px;
@@ -63,8 +63,9 @@ main{
     font-size: 16px;
     outline: none;
     border-style: none;
-    height: 40px;
-    width: 150px;
+    height:40px;
+    
+    width: 100px;
 }
 .box-search-bar button{
     border-style: none;
@@ -220,22 +221,29 @@ footer{
 }
 
 /* Main */
-@media(min-width:250px){
+@media(min-width:305px){
     main{
-        margin-top: 255px;
+        margin-top: 200px;
     }
 }
-@media(min-width:389px){
+ /* Navegación en tablets */
+@media(min-width:387px){
     main{
-        margin-top: 235px;
+        margin-top: 180px;
+    }
+    /* .logo{
+        width: 200px;
+    } */
+    .box-search-bar input{
+        width: 180px;
     }
 }
 @media(min-width:411px){
     main{
-        margin-top: 195px;
+        margin-top: 180px;
     }
 }
-
+/* Navegación en desktop */
 @media (min-width:769px) {
     .main-navbar{
         display:block;
@@ -246,6 +254,7 @@ footer{
             justify-content: space-between; 
         }
         .logo{
+            width: 200px;
             margin: 14px 0;
         }
         .box-search-bar input{

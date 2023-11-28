@@ -11,7 +11,7 @@ app.use(express.static(publicPath));
 // });
 
 const port = process.env.PORT || 3047;
-app.listen(port,()=>console.log(`Servidor Corriendo en el puerto ${port}`));
+app.listen(port,()=>console.log(`Servidor Corriendo en el puerto http://localhost:3047`));
 
 
 app.get ("/", (req, res)=>{
