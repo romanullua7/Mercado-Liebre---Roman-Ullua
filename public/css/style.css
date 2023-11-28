@@ -1,12 +1,10 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
-
 .main-header{
     width: 100%;
     background-color: #EAC926;
@@ -15,14 +13,9 @@ body{
     top: 0;
     z-index: 100
 }
-
-
-
 main{
     margin-top: 255px;
 }
-
-
 .hamburger-buttom{
     background-color: #085fbc;
     color: #ffffff;
@@ -39,11 +32,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-
 }
-
-
 .logo{
     /* width: 200px; */
     width: 140px;   
@@ -52,19 +41,14 @@ main{
     margin-right: 20px;
     align-self: center;
 }
-
-
 /* barra de busqueda oculta*/
-
 .box-search-bar input{
-    
     position: relative;
     border-radius:  5px 0 0 5px;
     font-size: 16px;
     outline: none;
     border-style: none;
     height:40px;
-    
     width: 100px;
 }
 .box-search-bar button{
@@ -74,32 +58,25 @@ main{
     border-radius: 0 5px 5px 0;
     position: absolute;
 }
-
 .box-search-bar button:hover{
     transition: 450ms;
     background-color: rgb(207, 207, 207);
 }
-
-
-
 /* Compra en cuotas y sin tarjeta de credito */
 .copy-header{
     width: 100%;
     font-weight: 500;
     text-align: center;
 }
-
 /* nav oculto */
 .main-navbar{
 display: none;
 }
-
 .main-navbar ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 .main-navbar a{
     text-decoration: none;
     color: #222222;
@@ -107,7 +84,6 @@ display: none;
     padding: 5px 0;
     font-size: 17px;
 }
-
 .home-banner{
     display: flex;
     justify-content: center;
@@ -118,7 +94,6 @@ display: none;
     width: 100%;
     max-width: 1000px;
 }
-
 .precio{
     font-size: 18px;
     margin: 0;
@@ -130,9 +105,7 @@ display: none;
     margin-left: 5px;
     margin-top: 3px;
     color: #39b54a;
-
 }
-
 /* Icon Truck */
 .circle-truck{
     width: 35px;
@@ -142,7 +115,6 @@ display: none;
     position: relative;
     margin-left: auto;
 }
-
 .fa-truck{
     position: absolute;
     color: #39b54a;
@@ -158,13 +130,10 @@ display: none;
     margin-top: 2px;
     width: 100%;
 }
-
 /*------------*/
-
 .titulo{
     text-align: center;
 }
-
 .producto {
     margin: 10px;
     width: 250px;
@@ -175,23 +144,16 @@ display: none;
     border-radius: 5px;
     cursor: pointer;
 }
-
 .producto:hover{
     box-shadow: 0px 0px 15px rgb(100, 100, 100);
     opacity: 1;
 }
-
-
-
 .producto img{
     width: 230px;
-
 }
-
 .info{
     display: flex;
 } 
-
 /*------------*/
 .section-3-footer{
     text-align: center;
@@ -202,7 +164,6 @@ color: #085fbc;
 font-size: 2rem;
 margin-bottom: 10px;
 }
-
 .section-3-footer  i:hover {
     color: #0022AA;
     transition: 450ms;
@@ -213,13 +174,11 @@ cursor: pointer;
 footer{
     text-align: center;
 }
-
 .section-1, .section-2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 /* Main */
 @media(min-width:305px){
     main{
@@ -299,12 +258,6 @@ footer{
             margin-top: 153px;
         }   
     }
-
-
-
-
-
-
 /* ---------------------------LOGIN------------------------------ */
 
 /* form{
@@ -316,11 +269,9 @@ footer{
     height: 100vh;
 
 } */
-
 .main-form{
     margin-top: 250px;
 }
-
 .create-form{
     padding: 20px 15px;
     margin:50px auto;
@@ -351,7 +302,6 @@ footer{
     border: 1px solid;
     border-radius: 5px;
 }
-
 .control:hover{
     background-color: #c4c4c48c;
     outline: none;
@@ -364,12 +314,9 @@ footer{
     border-radius: 5px;
     transition: 450ms;
 }
-
 .button-form:hover{
     background-color: #094e98;
 }
-
-
 @media (min-width:769px) {
     .create-form{
         display: flex;
@@ -385,5 +332,4 @@ footer{
     .main-form{
         margin-top: 200px;
     }
-
 }
