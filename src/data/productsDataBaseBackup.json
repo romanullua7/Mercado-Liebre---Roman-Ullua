@@ -1,0 +1,38 @@
+[
+{
+    "id":1,
+    "name":"Cafetera Moulinex",
+    "price":6770,
+    "discount":40,
+    "category":"visited",
+    "description":"Cafetera Dolce Gusto Lumio.",
+    "image":"img-cafetera-moulinex.jpg"
+},
+{
+    "id":2,
+    "name":"MacBook Pro 2019",
+    "price":230000,
+    "discount":20,
+    "category":"in-sale",
+    "description":"descripcion",
+    "image":"img-macbook-pro-2019.jpg"
+},
+{
+    "id":3,
+    "name":"Samsung Galaxy S10",
+    "price":70500,
+    "discount":10,
+    "category":"visited",
+    "description":"descripcion",
+    "image":"img-samsung-galaxy-s10.jpg"
+},
+{
+    "id":4,
+    "name":"SmartTv Samsung 43'",
+    "price":23200,
+    "discount":5,
+    "category":"in-sale",
+    "description":"descripcion",
+    "image":"img-tv-samsung-smart.jpg"
+}
+]

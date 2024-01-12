@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs')%>
+<body>
+<%- include('partials/header.ejs')%>
+
+ <main>
+
+<section class="section-1">
+    <% products.forEach(product =>{ %>
+        <div class="producto">
+            <!-- mostrar de manera dinamica -->
+            <img src="/images/products/<%=product.image%>" alt="cafetera">
+            <div class="circle-truck">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="info">
+                <p class="precio">$ <%=product.price%></p> <!-- mostrar de manera dinamica -->
+                <br>
+                <p class="descuento"><%=product.discount%>% OFF</p> <!-- mostrar de manera dinamica -->
+            </div>
+            <p class="nombre-de-producto"><%=product.name%></p> <!-- mostrar de manera dinamica -->
+            
+        </div>
+    <% }) %>
+</section>
+
+
+
+
+</main>
+
+<footer>
+<p>Copyright © 2023-2023 MercadoLiebre</p>
+</footer>
+
+</body>
+
+</html>

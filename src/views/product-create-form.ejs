@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs')%>
+
+<body>
+    <%- include('partials/header.ejs')%>
+<main class="main-form">
+
+    <% if (locals && locals.errorsArray) { 
+        errorsArray.forEach(error => { %>
+            <p> <%= error.msg %> </p>
+        <% })
+    } %>
+    
+<form action="/products/create" method="POST" enctype="multipart/form-data" class="create-form">
+
+<div class="title-form">
+    <h1>Crear Producto</h1>
+</div>
+<div class="form-desktop">
+<div class="control-form">
+    <label for="name">Nombre de producto:</label>
+    <input type="text" id="name" name="name" class="control" 
+    value="<%=locals.oldData ? oldData.name : null %>">
+    <% if (locals.errorsObjeto && errorsObjeto.name) { %>
+        <div class="error-msg">
+            <p> <%= errorsObjeto.name.msg %> </p>
+        </div>
+    <% } %>
+</div>
+<div class="control-form">
+    <label for="price">Precio:</label>
+    <input type="text" id="price" name="price" class="control"
+    value="<%=locals.oldData ? oldData.price : null %>">
+    <% if (locals.errorsObjeto && errorsObjeto.price) { %>
+        <div class="error-msg">
+            <p> <%= errorsObjeto.price.msg %> </p>
+        </div>
+    <% } %>
+</div>
+<div class="control-form">
+    <label for="description">Descripcion</label>
+    <input type="text" id="description" name="description" class="control"
+    value="<%=locals.oldData ? oldData.description : null %>">
+    <% if (locals.errorsObjeto && errorsObjeto.description) { %>
+        <div class="error-msg">
+            <p> <%= errorsObjeto.description.msg %> </p>
+        </div>
+    <% } %>
+</div>
+<div class="control-form">
+    <label for="discount">Oferta</label>
+    <input type="text" name="discount" class="control"
+    value="<%=locals.oldData ? oldData.discount : null %>">
+    <% if (locals.errorsObjeto && errorsObjeto.discount) { %>
+        <div class="error-msg">
+            <p> <%= errorsObjeto.discount.msg %> </p>
+        </div>
+    <% } %>
+</div>
+<div>
+    <div class="control-form">
+        <label for="productImage">Cargar imagen</label>
+        <input type="file" name="productImage" class="control">
+        <% if (locals.errorsObjeto && errorsObjeto.productImage) { %>
+            <div class="error-msg">
+                <p> <%= errorsObjeto.productImage.msg %> </p>
+            </div>
+        <% } %>
+    </div>
+    <div  class="control-form">
+        
+    <label for="category" class="form-label">Categoría:</label>
+    <select name="category" id="category" class="form-input">
+        <option value="">Elegí</option>
+        <option value="in-sale">En oferta</option>
+        <option value="visited">Últimos agregados</option>
+    </select>
+    <% if (locals.errorsObjeto && errorsObjeto.category) { %>
+        <div class="error-msg">
+            <p> <%= errorsObjeto.category.msg %> </p>
+        </div>
+    <% } %>
+    <br>
+</div>
+</div>
+  <button type="reset" class="button-form">Eliminar Todos</button>
+  <button type="submit" class="button-form">Guardar</button>
+</div>
+</form>
+
+</main>
+</body>
+</html>

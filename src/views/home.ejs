@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs')%>
+<body>
+<%- include('partials/header.ejs')%>
+
+ <main>
+    <div class="home-banner">
+        <img src="/images/img-home-banner.jpg" alt="">
+    </div>
+
+<h2 class="titulo">Basado en tu última visita</h2> 
+
+<section class="section-1">
+    <% visitedProducts.forEach(product =>{ %>
+        <div class="producto">
+            <a href="/products/detail/<%=product.id%>">
+            <!-- mostrar de manera dinamica -->
+            <img src="/images/products/<%=product.image%>" alt="cafetera">
+            <div class="circle-truck">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="info">
+                <p class="precio">$ <%=product.price%></p> <!-- mostrar de manera dinamica -->
+                <br>
+                <p class="descuento"><%=product.discount%>% OFF</p> <!-- mostrar de manera dinamica -->
+            </div>
+            <p class="nombre-de-producto"><%=product.name%></p> <!-- mostrar de manera dinamica -->
+        </a>
+        </div>
+    <% }) %>
+
+
+</section>
+<h2 class="titulo">Ofertas</h2>
+
+    <section class="section-2">
+
+        <% inSaleProducts.forEach(product =>{ %>
+            <div class="producto">
+                <a href="/products/detail/<%=product.id%>">
+                    <img src="/images/products/<%=product.image%>" alt="cafetera"> <!-- mostrar de manera dinamica --> 
+                <div class="circle-truck">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="info">
+                    <p class="precio">$ <%=product.price%></p> <!-- mostrar de manera dinamica -->
+                    <br>
+                    <p class="descuento"><%=product.discount%>% OFF</p> <!-- mostrar de manera dinamica -->
+                </div>
+                <p class="nombre-de-producto"><%=product.name%></p> <!-- mostrar de manera dinamica -->
+            </a>
+            </div>
+        <% }) %>
+
+    </section>
+<section class="section-3-footer">
+    <div class="box-footer">
+        <i class="fa-solid fa-credit-card"></i>
+       <h2>Pagá con tarjeta o en efectivo</h2>
+       <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+        puntos de pago. ¡Y siempre es seguro!</p>
+    </div>
+    <div class="box-footer">
+        <i class="fa-solid fa-gift"></i>
+       <h2>Envío gratis desde $ 2.500</h2>
+       <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+        productos. Es un beneficio de Mercado Puntos. </p>
+    </div>
+    <div class="box-footer">
+        <i class="fa-sharp fa-solid fa-user-shield"></i>
+       <h2>Seguridad, de principio a fin</h2>
+       <p> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+        porque estás siempre protegid@. </p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+<p>Copyright © 2023-2023 MercadoLiebre</p>
+</footer>
+
+</body>
+
+</html>

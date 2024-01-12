@@ -1,34 +1,35 @@
-const express = require("express");
-const path = require("path")
+// Require's
+const express = require('express');
+const path = require('path')
+const methodOverride = require('method-override');// Para poder usar los métodos PUT y DELETE
+const welcomeMiddleware = require("./middlewares/global/welcomeMiddleware");
+// const session = require("express-session")
 
+// express()
 const app = express();
 
-const publicPath = path.resolve(__dirname, '../public');
-app.use(express.static(publicPath));
 
-// app.listen(3047,()=>{
-//     console.log("http://localhost:3047/")
-// });
+// Middlewares
+app.use(express.static('public'));// Necesario para los archivos estáticos en el folder /public
+app.use(express.urlencoded({ extended: false })); // Para tomar los datos del body
+app.use(express.json()); // Para tomar los datos del body
+app.use(methodOverride('_method'));// Para poder usar los métodos PUT y DELETE
 
-const port = process.env.PORT || 3047;
-app.listen(port,()=>console.log(`Servidor Corriendo en el puerto http://localhost:3047`));
+app.use(welcomeMiddleware);
+
+// app.use(session({secret:"mensaje secreto"}))
+
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'));
+
+const mainController = require('./routes/main.js')
+const productsController = require('./routes/products.js')
 
 
-app.get ("/", (req, res)=>{
-    res.sendFile(path.resolve(__dirname, './views/home.html'))
-})
 
-app.use(express.static('public'))
+app.use('/', mainController);
+app.use('/products', productsController);
 
-// Definimos las rutas
-app.get ("/home", (req, res)=>{
-    res.sendFile(path.join(__dirname, './views/home.html'))
-})
-
-app.get ("/register", (req, res)=>{
-    res.sendFile(path.join(__dirname, './views/register.html'))
-})
-
-app.get ("/login", (req, res)=>{
-    res.sendFile(path.join(__dirname, './views/login.html'))
+app.listen(3044, ()=>{
+    console.log('Servidor corriendo en http://localhost:3044')
 })

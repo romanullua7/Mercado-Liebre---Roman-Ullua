@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs', {title:'Ingresar tu cuenta'})%>
+
+<body>
+    <%- include('partials/header.ejs')%>
+<main class="main-form">
+<form action="/login" method="post" class="create-form">
+
+<div class="title-form">
+    <h1>Completá los datos para ingresar tu cuenta</h1>
+</div>
+<div class="form-desktop">
+<div class="control-form">
+    <label for="email">E‑mail</label>
+    <input type="email" name="email" class="control">
+</div>
+<div class="control-form">
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" class="control">
+</div>
+<button type="reset" class="button-form">Cancelar</button>
+<button type="submit" class="button-form">Confirmar</button>
+</div>
+</form>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+[
+ {
+  "id": 1,
+  "name": "Cafetera Moulinex",
+  "price": 6770,
+  "discount": 40,
+  "category": "visited",
+  "description": "Cafetera Dolce Gusto Lumio.",
+  "image": "img-cafetera-moulinex.jpg"
+ },
+ {
+  "id": 2,
+  "name": "MacBook Pro 2019",
+  "price": 230000,
+  "discount": 20,
+  "category": "in-sale",
+  "description": "descripcion",
+  "image": "img-macbook-pro-2019.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Samsung Galaxy S10",
+  "price": 70500,
+  "discount": 10,
+  "category": "visited",
+  "description": "descripcion",
+  "image": "img-samsung-galaxy-s10.jpg"
+ },
+ {
+  "id": 4,
+  "name": "SmartTv Samsung 43'",
+  "price": 23200,
+  "discount": 5,
+  "category": "in-sale",
+  "description": "descripcion",
+  "image": "img-tv-samsung-smart.jpg"
+ },
+ {
+  "id": 12,
+  "name": "Pato",
+  "price": "1212",
+  "discount": "12",
+  "category": "",
+  "description": "adasd",
+  "image": "image-default.jpg"
+ },
+ {
+  "id": 13,
+  "name": "Celular samsung",
+  "price": "10",
+  "discount": "5",
+  "category": "",
+  "description": "nuevo producto",
+  "image": "productImage1704404789050image.jpg"
+ },
+ {
+  "id": 14,
+  "name": "Celular samsung",
+  "price": "100000",
+  "discount": "5",
+  "category": "in-sale",
+  "description": "nuevo producto",
+  "image": "productImage1704407055085image.jpg"
+ },
+ {
+  "id": 15,
+  "name": "Pato",
+  "price": "0",
+  "discount": "",
+  "category": "visited",
+  "description": "",
+  "image": "productImage1704407084835image.jpg"
+ },
+ {
+  "id": 16,
+  "name": "Pato",
+  "price": "100000",
+  "discount": "4",
+  "category": "visited",
+  "description": "es una patito lindo",
+  "image": "productImage1704410165855image.jpg"
+ },
+ {
+  "id": 17,
+  "name": "",
+  "price": "",
+  "discount": "",
+  "category": "in-sale",
+  "description": "",
+  "image": "productImage1704410281040image.jpg"
+ },
+ {
+  "id": 18,
+  "name": "teclado 2",
+  "price": "1234234",
+  "discount": "5",
+  "category": "visited",
+  "description": "nuevo producto",
+  "image": "productImage1704410441920image.jpg"
+ },
+ {
+  "id": 22,
+  "name": "teclado",
+  "price": "34534",
+  "discount": "5",
+  "category": "in-sale",
+  "description": "nuevo producto",
+  "image": "productImage1704410789820image.jpg"
+ },
+ {
+  "id": 23,
+  "name": "",
+  "price": "",
+  "discount": "",
+  "category": "",
+  "description": "",
+  "image": "productImage1704410882063image.jpg"
+ }
+]

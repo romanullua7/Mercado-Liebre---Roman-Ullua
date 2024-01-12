@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs')%>
+
+<body>
+    <%- include('partials/header.ejs')%>
+<main class="main-form">
+<form action="/register" method="post" class="create-form">
+    <div class="title-form">
+        <h1>Completá los datos para crear tu cuenta</h1>
+    </div>
+    <div class="form-desktop">
+    <div class="control-form">
+        <label for="email">Agregá tu e-mail</label>
+        <input type="email" name="email" class="control">
+    </div>
+    <div class="control-form">
+        <label for="name">Eligí tu nombre</label>
+        <input type="text" name="name" class="control">
+    </div>
+    <div class="control-form">
+        <label for="tel">Agregá tu teléfono</label>
+        <input type="tel" name="tel" class="control">
+    </div>
+    <div class="control-form">
+        <label for="password">Creá tu contraseña</label>
+        <input type="password" name="password" class="control">
+    </div>
+    <button type="reset" class="button-form">Cancelar</button>
+    <button type="submit" class="button-form">Confirmar</button>
+</div>
+</form>
+
+</main>
+
+</body>
+</html>

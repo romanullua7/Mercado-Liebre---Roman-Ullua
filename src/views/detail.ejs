@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head.ejs')%>
+<body>
+<%- include('partials/header.ejs')%>
+
+ <main>
+        <div class="product-detail">
+            <!-- mostrar de manera dinamica -->
+            <div class="product-img">
+            <img src="/images/products/<%=singleProduct.image%>" alt="cafetera">
+            </div>
+            <!-- <div class="circle-truck">
+                <i class="fa-solid fa-truck"></i>
+            </div> -->
+            <div class="info-detail">
+                <p class="nombre-de-producto-detail"><%=singleProduct.name%></p> <!-- mostrar de manera dinamica -->
+                <p class="precio-detail">$ <%=singleProduct.price%></p> <!-- mostrar de manera dinamica -->
+                <p class="descuento-detail"><%=singleProduct.discount%>% OFF</p> <!-- mostrar de manera dinamica -->
+                <br>
+                <button type="reset" class="button-detail">Comprar</button>
+                <br>
+                <a href="/products/edit/<%= singleProduct.id %>">
+                    <button type="submit" class="button-detail">Editar Producto</button>
+                </a>
+                <br>
+                <form action="/products/delete/<%=singleProduct.id%>?_method=DELETE" method="POST">
+                    <button type="submit" class="button-detail">Eliminar</button>
+                </form>
+</main>
+<footer>
+    <p>Copyright © 2023-2023 MercadoLiebre</p>
+</footer>
+</body>
+</html>
+
